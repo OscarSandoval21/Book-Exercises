@@ -1,0 +1,37 @@
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script>
+            function getSum(number)
+            {
+                return Number(number[0]) + Number(number[1]);
+            }
+
+            function doubleInput(input)
+            {
+                input = Number(input);
+                input *= 2;
+
+                return input.toString();
+            }
+
+            window.onload = function()
+            {
+                var number = prompt("Enter a number");
+
+                    number = doubleInput(number);
+
+                if (number > 9)
+                    console.log(getSum(number));
+                else
+                    console.log(Number(number));
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
